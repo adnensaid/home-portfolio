@@ -1,0 +1,40 @@
+/* base */
+
+@import './assets/style/reset';
+@import './assets/style/base';
+@import './assets/style/classes';
+@import './assets/style/media-queries.scss';
+@import './assets/style/variables';
+@import 'bootstrap/dist/css/bootstrap.min.css';
+/* fonts */
+
+@import './assets/fonts/lato/stylesheet.css';
+@import './assets/fonts/montserrat/stylesheet.css';
+@import './assets/fonts/Raleway/stylesheet.css';
+@import './assets/fonts/Roboto-bold/stylesheet.css';
+@import './assets/fonts/bevietnam/stylesheet.css';
+@import './assets/fonts/opensans/stylesheet.css';
+@import './assets/fonts/MYRIADPRO-REGULAR/style.css';
+body{
+  font-family: 'ralewayregular';
+}
+.App{
+  min-height: 100vh;
+  line-height: 2.5rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to bottom, #535354 25%, var(--black) 25% 75%, #535354 75% 100%);
+
+  &::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: center center / cover url(./assets/images/bg.png) no-repeat;
+    filter: brightness(1.1);
+
+  }
+
+}

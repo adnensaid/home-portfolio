@@ -1,0 +1,51 @@
+@import '../../../assets/style/media-queries.scss';
+.socials{
+  display: flex;
+  flex-direction: column;
+  //box-shadow: 0 0 10px 0 rgba(0,0,0,.2);
+  @include xs{
+    flex-direction: row;
+    padding: 0 0.5rem;
+  }
+
+  .socialsElem{
+    width: 3.8rem;
+    height: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: .2rem;
+    .socialsElemImg{
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--bg-light);
+      padding: .8rem .6rem;
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+
+
+    }
+    .queu{
+      position: absolute;
+      width: 100%;
+      height: 100%;  
+      background: var(--bg-light);  
+      border-top-right-radius: .5rem;
+      border-bottom-right-radius: .5rem;
+
+    }
+   
+    &:hover{
+      .socialsElemImg{
+        transition: all ease-in-out .2s;
+        transform: translateX(2rem);
+      }
+    }
+  }
+}  

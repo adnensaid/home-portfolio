@@ -1,0 +1,40 @@
+.main{
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  z-index: 1;
+  .about{
+    color: var(--white);
+    .aboutContent{
+      .title{
+        font-family: 'be_vietnambold';
+        font-size: 4rem;
+        letter-spacing: .2rem;
+        line-height: 5rem;
+        margin-bottom: 2rem;
+      }
+      .text{
+        font-family: 'open_sanslight';
+        font-size: 2rem;
+        line-height: 2.8rem;
+        max-width: 45rem;
+        text-align: center;
+        strong{
+          font-family: 'MYRIADPRO-REGULAR', sans-serif;
+        }
+      }
+      .lienUtiles{
+        font-family: 'open_sansbold';
+        button{
+        font-size: 2rem;
+        line-height: 2rem;
+        margin: 3rem 1rem;
+        background: var(--bg-btn);
+        border: .1rem solid var(--bg-btn);
+        border-radius: 1rem !important;
+        padding: 1.5rem 2.4rem;
+        }
+      }
+    }
+  }
+}
