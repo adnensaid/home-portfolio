@@ -9,8 +9,7 @@ export default class Main extends Component{
             <div className={ Style.aboutContent+" d-flex flex-column align-items-center" }>
               <h1 className={ Style.title }>Hi, je m'appelle Adnen</h1>
               <p className={ Style.text }>
-                <strong>Intégrateur</strong>  sénior et <strong> développeur web </strong> junior,
-                <strong>responsive</strong> pixel perfect,
+                <strong>Intégrateur</strong> et <strong> développeur web </strong> junior.
                 une liste de mes dernières projets
                 dans la page portfolio.
               </p>
